@@ -55,7 +55,7 @@ public extension Operator {
         let expression = NSExpression(format: "2 ** 3 ** 2")
         let result = expression.expressionValueWithObject(nil, context: nil)
         
-        if result.intValue == 512 {
+        if result!.intValue == 512 {
             return .Right
         } else {
             return .Left
